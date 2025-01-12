@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont">
+
+            <div class="redcirc"></div>
+
+            <div class="gamebox">
+                <div class="head">
+                    <h1 style="color: #d98fffe3;">Tic Tac Toe</h1>
+                </div>
+
+                <main class="gamearea">
+                    <button class="boxs" id="box1"></button>
+                    <button class="boxs" id="box2"></button>
+                    <button class="boxs" id="box3"></button>
+                    <button class="boxs" id="box4"></button>
+                    <button class="boxs" id="box5"></button>
+                    <button class="boxs" id="box6"></button>
+                    <button class="boxs" id="box7"></button>
+                    <button class="boxs" id="box8"></button>
+                    <button class="boxs" id="box9"></button>
+                </main>
+                <button class="reset">Reset Game</button>
+            </div>
+            
+            <div class="modal">
+                <div class="mainmodal ">
+                    <div class="modalhead">
+                        <h2>Result</h2>
+                        <img src="./cross.svg" onclick="closmodal()" style="filter: invert(1);" alt="">
+                    </div>
+                    <hr style="border: 2px solid grey;">
+                    <div class="modalitems">
+                        <div class="modaloptions">
+                            <h3 class="winnermsg"></h3>
+                            <button class="newgame" onclick="closmodal()">New Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bluecirc"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
